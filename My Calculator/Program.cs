@@ -13,7 +13,7 @@ namespace My_Calculator
             // place this code inside Program.cs, within the Main method
 
             // Declare variables and then instantiate to zero
-            int num1 = 0; int num2 = 0;
+            float num1 = 0; float num2 = 0;
 
             // Display title as the C# console calculator app
             Console.WriteLine("Console Calculator in C#\r");
@@ -21,13 +21,19 @@ namespace My_Calculator
 
             // Ask the user to type the first number
             Console.WriteLine("Type a number, and then press Enter");
-            num1 = Convert.ToInt16(Console.ReadLine());     //Answer to Question 5
-            // Line 13: convert num1 to integer
-            while (num1 < -100 || num1 > 100)
+            num1 = (float) Convert.ToDouble(Console.ReadLine());        //Answer to Question 10
+            while (num1 < -100.0 || num1 > 100.0)
             {
                 Console.WriteLine("Invalid. Type again.");
-                num1 = Convert.ToInt16(Console.ReadLine());
+                num1 = (float) Convert.ToDouble(Console.ReadLine());
             }
+            //num1 = Convert.ToInt16(Console.ReadLine());     //Answer to Question 5
+            // Line 13: convert num1 to integer
+            //while (num1 < -100 || num1 > 100)     Answer to Question 9
+            //{
+            //    Console.WriteLine("Invalid. Type again.");
+            //    num1 = Convert.ToInt16(Console.ReadLine());
+            //}
             //while(num1 <= 0 || num1 >= 100)       Answer to Question 8
             //{
             //    Console.WriteLine("Invalid. Type again.");
@@ -41,13 +47,19 @@ namespace My_Calculator
 
             // Ask the user to type the second number
             Console.WriteLine("Type another number, and then press Enter");
-            num2 = Convert.ToInt16(Console.ReadLine());     //Answer to Question 5
-            // Line 18: convert num2 to integer
-            while (num2 < -100 || num2 > 100)
+            num2 = (float) Convert.ToDouble(Console.ReadLine());        //Answer to Question 10
+            while (num2 < -100.0 || num2 > 100.0)
             {
-                Console.WriteLine("Invalid. Type again");
-                num2 = Convert.ToInt16(Console.ReadLine());
+                Console.WriteLine("Invalid. Type again.");
+                num2 = (float)Convert.ToDouble(Console.ReadLine());
             }
+            //num2 = Convert.ToInt16(Console.ReadLine());     //Answer to Question 5
+            // Line 18: convert num2 to integer
+            //while (num2 < -100 || num2 > 100)     Answer to Question 9
+            //{
+            //    Console.WriteLine("Invalid. Type again");
+            //    num2 = Convert.ToInt16(Console.ReadLine());
+            //}
             //while (num2 <= 0 || num2 >= 100)      Answer to Question 8
             //{
             //    Console.WriteLine("Invalid. Type again.");
