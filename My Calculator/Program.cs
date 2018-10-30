@@ -23,12 +23,22 @@ namespace My_Calculator
             Console.WriteLine("Type a number, and then press Enter");
             num1 = Convert.ToInt16(Console.ReadLine());     //Answer to Question 5
             // Line 13: convert num1 to integer
+            while (num1 < 0)
+            {
+                Console.WriteLine("Invalid. Type again");
+                num1 = Convert.ToInt16(Console.ReadLine());
+            }
 
             // Ask the user to type the second number
             Console.WriteLine("Type another number, and then press Enter");
             num2 = Convert.ToInt16(Console.ReadLine());     //Answer to Question 5
             // Line 18: convert num2 to integer
+            while (num2 < 0)
+            {
+                Console.WriteLine("Invalid. Type again.");
+                num2 = Convert.ToInt16(Console.ReadLine());
 
+            }
             // Ask the user to choose an option
             Console.WriteLine("Choose an option from the following list:");
             Console.WriteLine("\ta - Add");
