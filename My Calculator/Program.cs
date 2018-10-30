@@ -21,12 +21,12 @@ namespace My_Calculator
 
             // Ask the user to type the first number
             Console.WriteLine("Type a number, and then press Enter");
-            num1 = Console.ReadLine();
+            num1 = Convert.ToInt16(Console.ReadLine());     //Answer to Question 5
             // Line 13: convert num1 to integer
 
             // Ask the user to type the second number
             Console.WriteLine("Type another number, and then press Enter");
-            num2 = Console.ReadLine();
+            num2 = Convert.ToInt16(Console.ReadLine());     //Answer to Question 5
             // Line 18: convert num2 to integer
 
             // Ask the user to choose an option
