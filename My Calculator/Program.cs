@@ -23,11 +23,16 @@ namespace My_Calculator
             Console.WriteLine("Type a number, and then press Enter");
             num1 = Convert.ToInt16(Console.ReadLine());     //Answer to Question 5
             // Line 13: convert num1 to integer
-            while(num1 <= 0 || num1 >= 100)
+            while (num1 < -100 || num1 > 100)
             {
                 Console.WriteLine("Invalid. Type again.");
                 num1 = Convert.ToInt16(Console.ReadLine());
             }
+            //while(num1 <= 0 || num1 >= 100)       Answer to Question 8
+            //{
+            //    Console.WriteLine("Invalid. Type again.");
+            //    num1 = Convert.ToInt16(Console.ReadLine());
+            //}
             //while (num1 < 0)      Answer to Question 7
             //{
               //  Console.WriteLine("Invalid. Type again.");
@@ -38,11 +43,16 @@ namespace My_Calculator
             Console.WriteLine("Type another number, and then press Enter");
             num2 = Convert.ToInt16(Console.ReadLine());     //Answer to Question 5
             // Line 18: convert num2 to integer
-            while (num2 <= 0 || num2 >= 100)
+            while (num2 < -100 || num2 > 100)
             {
-                Console.WriteLine("Invalid. Type again.");
+                Console.WriteLine("Invalid. Type again");
                 num2 = Convert.ToInt16(Console.ReadLine());
             }
+            //while (num2 <= 0 || num2 >= 100)      Answer to Question 8
+            //{
+            //    Console.WriteLine("Invalid. Type again.");
+            //    num2 = Convert.ToInt16(Console.ReadLine());
+            //}
             //while (num2 < 0)      Answer to Question 7
             //{
             //    Console.WriteLine("Invalid. Type again.");
