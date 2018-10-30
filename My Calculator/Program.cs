@@ -41,7 +41,7 @@ namespace My_Calculator
             switch (Console.ReadLine())
             {
                 case "a":
-                    Console.WriteLine("Your result: {num1} + {num2} = " + (num1 + num2)); // Line 32
+                    Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2)); // Line 32 
                     break;
                 case "s":
                     Console.WriteLine($"Your result: {num1} - {num2} = " + (num1 - num2));
